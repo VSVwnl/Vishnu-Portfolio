@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+
+    <header class="header">
+      
+      <a href="#home" class="logo">
+        Vishnu Sai Vardhan <span>Bodapati</span> 
+      </a>
+    
+      <i class="bx bx-menu" id="menu-icon"></i>
+      <nav class="navbar">
+        <a href="#home" class="link">Home</a>
+        <a href="#about" class="link">About</a>
+        <a href="#projects" class="link">Projects</a>
+        <a href="#contact" class="link">Contact</a>
+      </nav>
+
+      <a href="#contact">
+          <button class="gradient-btn">Contact Me</button>
+      </a>
+
+    </header>
+
+    <section class="home" id="home">
+    <div class="home-content">
+        <h1><span>Vishnu</span></h1>
+        <h3><span>Gameplay Programmer / Game Developer</span></h3>
+        <p>
+          Crafting immersive gameplay, one idea at a time.
+          I create engaging and polished game experiences using Unity and Unreal Engine, with a focus on feel, clarity, and player impact.
+        </p>
+        <div class="social-icons">
+            <a href="https://vsvwnl.itch.io/" class="social-icon">
+              <i class="bx bxs-joystick"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/vishnu-sai-vardhan-bodapati/" class="social-icon">
+              <i class="bx bxl-linkedin"></i>
+            </a>
+            <a href="https://github.com/VSVwnl" class="social-icon">
+              <i class="bx bxl-github"></i>
+            </a>
+        </div>
+        <div class="btn-group">
+            <a href="VishnuResume Main.pdf" class="btn">Resume</a>
+            <a href="#contact" class="btn">Contact</a>
+        </div>
+    </div>
+
+    <div class="home-img"> 
+        <img src="pfp1.jpeg" alt="" />
+    </div>
+  </section>
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="pfp1.jpeg" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2>About <span>Me</span></h2>
+            <p>
+             I am Vishnu Sai Vardhan Bodapati, a gameplay programmer and game developer with a strong focus on building responsive mechanics and polished player experiences. I work primarily with Unity and Unreal Engine, translating ideas into interactive systems through gameplay logic, UI, and iteration. I enjoy crafting games that feel intuitive to play and leave a lasting impression.
+            </p>
+            <a href="#projects" class="btn">Read More</a>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2 class="heading">Projects</h2>
+
+        <div class="projects-box">
+            <div class="project-card">
+                <img src="test.png" alt="">
+                <h3>Overpriced (UE5)</h3>
+                <p>
+                  Built gameplay systems, player interaction logic, and audio feedback systems using UE5 Blueprints.
+                </p>
+                <div class="project-btn-group">
+                  <a href="https://vsvwnl.itch.io/overpriced" target="_blank">
+                    <i class="bx bxs-joystick"></i>
+                  </a>
+                  <a href="https://youtu.be/CjmG9lhT-XA" target="_blank">
+                    <i class="bx bxl-youtube"></i>
+                  </a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="TowerOfTrics.png" alt="">
+                <h3>Tower Of Tricks (UE5)</h3>
+                <p>
+                  Implemented puzzle systems, interaction logic, and UI workflows using UE5 Blueprints. 
+                </p>
+                <div class="project-btn-group">
+                  <a href="https://olatiny.itch.io/tower-of-tricks" target="_blank">
+                    <i class="bx bxs-joystick"></i> 
+                  </a>
+                  <a href="https://youtu.be/15_K-l3boU4" target="_blank">
+                    <i class="bx bxl-youtube"></i> 
+                  </a>
+                </div>
+            </div> 
+
+            <div class="project-card">
+                <img src="card.png" alt="">
+                <h3>Hungry Owl (Playdate)</h3>
+                <p>
+                  Designed and implemented the complete game from scratch, including core gameplay mechanics, crank-based aiming, and timing logic using Lua for the Playdate SDK.
+                </p>
+                <div class="project-btn-group">
+                  <a href="https://vsvwnl.itch.io/hungry-owl" target="_blank">
+                    <i class="bx bxs-joystick"></i> 
+                  </a>
+                  <a href="https://youtu.be/KpXS4b2-CIk" target="_blank">
+                    <i class="bx bxl-youtube"></i> 
+                  </a>
+                </div>
+                
+            </div>                       
+        </div>
+
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+
+        <form action="https://formspree.io/f/mdangkgd" method="POST">
+
+          <div class="input-group-1">
+
+            <div class="input-box">
+              <input type="text" name="name" placeholder="Full Name" required> 
+              <input type="email" name="email" placeholder="Email" required>
+            </div>
+
+
+            <div class="input-box">
+              <input type="number" name="phone" placeholder="Phone Number">
+              <input type="text" name="subject" placeholder="Subject" required>
+            </div>
+
+          </div>
+
+          <div class="input-group-2">
+            <textarea name="message" id="" placeholder="Your Message" cols="30" rows="10" required></textarea>
+            <input type="submit" value="Send Message" class="btn">
+
+            <div class="contact-alt">
+              <span>Or email me directly at</span>
+              <a href="mailto:bvsv2009@gmail.com">bvsv2009@gmail.com</a>
+            </div>
+          </div>
+
+        </form>
+
+        
+
+    </section>
+
+    <footer class="footer">
+        <div class="social-icons">
+            <a href="#" class="social-icon">
+              <i class="bx bxs-joystick"></i>
+            </a>
+            <a href="#" class="social-icon">
+              <i class="bx bxl-linkedin"></i>
+            </a>
+            <a href="#" class="social-icon">
+              <i class="bx bxl-github"></i>
+            </a>
+        </div>
+
+        <ul class="list">
+          <li>
+            <a href="#">FAQ</a>
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
